@@ -17,4 +17,4 @@ ksVersion: ">=3.0.0"
 dependencies:
   - name: frontend
     condition: frontend.enabled
-icon: ./favicon.svg
+icon: ./fluent-operator-icon.svg
