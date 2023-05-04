@@ -15,7 +15,4 @@ sources:
   - https://github.com/kubesphere
 kubeVersion: ">=1.19.0"
 ksVersion: ">=3.0.0"
-dependencies:
-  - name: fluent-operator
-    condition: fluentOperator.enabled
 icon: ./fluent-operator-icon.svg
