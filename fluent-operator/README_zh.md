@@ -1,1 +1,1 @@
-这是一个示例扩展组件，这里展示了他的详细介绍，你可以在这里使用 Markdown 语法编写内容。
+Fluent Operator为部署Fluent Bit和Fluentd来收集日志提供了极大的灵活性。

@@ -1,1 +1,1 @@
-This is a sample extension, which is shown in more detail here, and you can write it here using Markdown syntax.
+Fluent Operator provides great flexibility in building a logging layer based on Fluent Bit and Fluentd.

@@ -1,11 +1,2 @@
-frontend:
-  enabled: true
-  image:
-    repository: kubespheredev/employee-frontend
-    tag: latest
-
 backend:
   enabled: true
-  image:
-    repository: kubespheredev/employee-api
-    tag: latest
