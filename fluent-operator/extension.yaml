@@ -8,6 +8,7 @@ description:
   zh: Fluent Operator为部署Fluent Bit和Fluentd来收集日志提供了极大的灵活性。
   en: Fluent Operator provides great flexibility in building a logging layer based on Fluent Bit and Fluentd.
 keywords:
+  - Observability
   - Logging
 home: https://kubesphere.io
 sources:
@@ -15,6 +16,6 @@ sources:
 kubeVersion: ">=1.19.0"
 ksVersion: ">=3.0.0"
 dependencies:
-  - name: backend
-    condition: backend.enabled
+  - name: fluent-operator
+    condition: fluentOperator.enabled
 icon: ./fluent-operator-icon.svg
