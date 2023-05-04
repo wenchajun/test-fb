@@ -4,9 +4,6 @@
 
 # Set this to containerd or crio if you want to collect CRI format logs
 containerRuntime: docker
-#  If you want to deploy a default Fluent Bit pipeline (including Fluent Bit Input, Filter, and output) to collect Kubernetes logs, you'll need to set the Kubernetes parameter to true
-# see https://github.com/fluent/fluent-operator/tree/master/manifests/logging-stack
-Kubernetes: true
 
 operator:
   # The init container is to get the actual storage path of the docker log files so that it can be mounted to collect the logs.
