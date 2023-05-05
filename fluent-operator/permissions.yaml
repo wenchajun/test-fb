@@ -43,3 +43,4 @@ rules:
     resources:
       - 'clusterfluentbitconfigs'
       - 'clusteroutputs'
+      - 'fluentbits'
