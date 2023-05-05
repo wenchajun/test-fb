@@ -1,4 +1,3 @@
-{{- if .Values.Kubernetes -}}
 {{- if .Values.fluentbit.enable -}}
 {{- if .Values.fluentd.enable -}}
 apiVersion: fluentbit.fluent.io/v1alpha2
@@ -13,6 +12,5 @@ spec:
   forward:
     host: {{ .Values.fluentd.name }}.{{ .Release.Namespace }}.svc
     port: {{ .Values.fluentd.forward.port }}
-{{- end }}
 {{- end }}
 {{- end }}

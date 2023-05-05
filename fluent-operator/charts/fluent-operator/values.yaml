@@ -72,7 +72,7 @@ fluentbit:
 
   output:
     stdout:
-      enable: false
+      enable: true
 
 fluentd:
   # Installs a sub chart carrying the CRDs for the fluentd controller. The sub chart is enabled by default.
