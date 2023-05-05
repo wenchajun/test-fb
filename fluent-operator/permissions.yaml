@@ -42,3 +42,4 @@ rules:
       - 'fluentbit.fluent.io'
     resources:
       - 'clusterfluentbitconfigs'
+      - 'clusteroutputs'
