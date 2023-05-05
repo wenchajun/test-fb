@@ -25,28 +25,7 @@ rules:
       - 'deployments'
   - verbs:
       - '*'
-  - apiGroups:
-      - fluentbit.fluent.io
+    apiGroups:
+      - 'apiextensions.k8s.io'
     resources:
-      - collectors
-      - fluentbits
-      - clusterfluentbitconfigs
-      - clusterfilters
-      - clusterinputs
-      - clusteroutputs
-      - clusterparsers
-  - verbs:
-      - '*'
-  - apiGroups:
-      - fluentd.fluent.io
-    resources:
-      - fluentds
-      - fluentds/status
-      - clusterfluentdconfigs
-      - clusterfluentdconfigs/status
-      - fluentdconfigs
-      - fluentdconfigs/status
-      - clusterfilters
-      - filters
-      - clusteroutputs
-      - outputs
+      - 'customresourcedefinitions'
