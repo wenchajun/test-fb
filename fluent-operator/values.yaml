@@ -1,0 +1,4 @@
+FluentOperator:
+  enabled: true
+fluent-operator:
+  namespaceOverride: kubesphere-logging-system

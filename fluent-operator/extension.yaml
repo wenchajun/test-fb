@@ -2,17 +2,31 @@ apiVersion: v1
 name: fluent-operator
 version: 2.2.0
 displayName:
-  zh: KubeSphere 日志收集扩展组件
-  en: KubeSphere Log Collection Extensions
+  zh: Fluent Operator 扩展组件
+  en: Fluent Operator Extension
 description:
   zh: Fluent Operator为部署Fluent Bit和Fluentd来收集日志提供了极大的灵活性。
   en: Fluent Operator provides great flexibility in building a logging layer based on Fluent Bit and Fluentd.
+category: logging
 keywords:
   - Observability
   - Logging
+provider:
+  zh:
+    name: "青云科技"
+    email: "ks@kubesphere.io"
+    url: "https://www.qingcloud.com"
+  en:
+    name: "QingCloud"
+    email: "ks@kubesphere.io"
+    url: "https://www.qingcloud.com"
 home: https://kubesphere.io
 sources:
   - https://github.com/kubesphere
 kubeVersion: ">=1.19.0"
 ksVersion: ">=3.0.0"
-icon: ./fluent-operator-icon.svg
+dependencies:
+  - name: fluent-operator
+    condition: FluentOperator.enabled
+staticFileDirectory: static
+icon: ./static/fluent-operator-icon.svg

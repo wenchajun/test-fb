@@ -1,8 +1,10 @@
+{{- if .Values.Kubernetes -}}
 {{- if .Values.fluentbit.enable -}}
 apiVersion: fluentbit.fluent.io/v1alpha2
 kind: FluentBit
 metadata:
   name: fluent-bit
+  namespace: {{ template "fluent-operator.namespace" . }}
   labels:
     app.kubernetes.io/name: fluent-bit
 spec:
@@ -51,4 +53,5 @@ spec:
   labels:
 {{ toYaml .Values.fluentbit.labels | indent 4 }}
   {{- end }}
+{{- end }}
 {{- end }}
